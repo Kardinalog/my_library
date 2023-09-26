@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 int mx_factorial_iter(int n) {
     if (n > 0) {

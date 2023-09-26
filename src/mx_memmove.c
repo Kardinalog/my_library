@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 void *mx_memmove(void *dest, const void *src, size_t n) {
     unsigned char *d = dest;

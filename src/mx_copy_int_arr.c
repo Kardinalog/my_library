@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 int* mx_copy_int_arr(const int* src, int size) {
     if (src == NULL || size < 0) {

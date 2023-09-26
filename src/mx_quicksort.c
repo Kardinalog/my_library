@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 int mx_partition(char** arr, int left, int right) {
     int i = left, j = right;

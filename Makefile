@@ -13,7 +13,7 @@ $(TARGET): $(OBJ_FILES)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -I$(INC_DIR) -c -o $@ $<
 
-all: $(TARGET)
+install: $(TARGET)
 
 clean:
 	rm -f $(OBJ_DIR)/*.o
@@ -22,9 +22,13 @@ fclean: clean
 	rm -f $(TARGET)
 	rm -rf $(OBJ_DIR)
 
-complile: fclean all
+complile: fclean install
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
 
 $(OBJ_FILES): | $(OBJ_DIR)
+
+uninstall: fclean
+
+reinstall: uninstall install

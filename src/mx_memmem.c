@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 void *mx_memmem(const void *haystack, size_t haystacklen, const void *needle, size_t needlelen) {
     if (needlelen > haystacklen) {

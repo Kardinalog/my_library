@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd) {
     if (lineptr == NULL || buf_size == 0 || fd < 0) {
